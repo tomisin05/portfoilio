@@ -96,3 +96,76 @@
   background: rgba(0, 255, 157, 0.1);
   color: #00ff9d;
 }
+
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .home-section {
+      padding: 1rem;
+      padding-top: 80px; /* Add space for navbar */
+      min-height: 100vh;
+      height: auto;
+    }
+  
+    .hero-content {
+      padding: 0 15px;
+    }
+  
+    .avatar {
+      width: 150px; /* Smaller avatar for mobile */
+      height: 150px;
+    }
+  
+    .text-content span {
+      font-size: 1.8rem; /* Smaller text for mobile */
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+      padding: 0 20px;
+    }
+  
+    .cta-button {
+      width: 100%;
+      padding: 0.7rem 1.2rem;
+    }
+  }
+  
+  /* Even smaller screens */
+  @media screen and (max-width: 480px) {
+    .home-section {
+      padding-top: 60px;
+    }
+  
+    .text-content span {
+      font-size: 1.5rem;
+    }
+  
+    .avatar {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* Handle very tall mobile screens */
+  @media screen and (max-height: 700px) and (max-width: 768px) {
+    .home-section {
+      padding-top: 70px;
+      height: auto;
+    }
+  
+    .avatar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .hero-content {
+      margin-top: 1rem;
+    }
+  }
