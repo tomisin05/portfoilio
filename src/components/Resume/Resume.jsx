@@ -217,6 +217,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume.pdf'
 import { FaDownload, FaBriefcase, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 import './Resume.css';
 
@@ -361,7 +362,7 @@ const Resume = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a href="public\resume\Oluwatomisin_Badmus_Resume.pdf" download className="download-button">
+          <a href= {resumePdf} download className="download-button">
             <FaDownload className="download-icon" />
             Download Resume
           </a>

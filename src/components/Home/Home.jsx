@@ -6,6 +6,7 @@ import Particles from 'react-tsparticles';
 import { Link } from 'react-scroll';
 import { loadFull } from "tsparticles";
 import './Home.css';
+import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume.pdf'
 
 const Home = () => {
   const typedRef = useRef(null);
@@ -87,7 +88,7 @@ const Home = () => {
             </Link>
             
             <motion.a
-              href="public\resume\Oluwatomisin_Badmus_Resume.pdf"
+              href= {resumePdf}
               download
               className="cta-button secondary"
               whileHover={{ scale: 1.05 }}
