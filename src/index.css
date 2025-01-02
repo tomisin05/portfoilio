@@ -45,11 +45,6 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
 
 
 a {
@@ -63,12 +58,17 @@ a:hover {
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
  
 h1 {
