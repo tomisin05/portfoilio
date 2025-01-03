@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGraduationCap, FaBriefcase, FaCode } from 'react-icons/fa';
@@ -276,6 +276,7 @@ const About = () => {
 
 
   const [showMore, setShowMore] = useState(false);
+  const timelineSectionRef = useRef(null); 
   const initialDisplay = 5;
 
   const controls = useAnimation();
@@ -283,6 +284,19 @@ const About = () => {
     threshold: 0.1,
     triggerOnce: true
   });
+
+  // Function to handle view more/less click
+  const handleViewToggle = () => {
+    setShowMore(!showMore);
+    
+    // If we're showing less (closing), scroll to the timeline section
+    if (showMore && timelineSectionRef.current) {
+      timelineSectionRef.current.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   useEffect(() => {
     if (inView) {
@@ -331,7 +345,7 @@ const About = () => {
           cutting-edge technologies.
         </p>
 
-        <div className="timeline-section">
+        <div className="timeline-section" ref={timelineSectionRef}>
           <h3>My Journey</h3>
           <motion.div 
             className="timeline"
@@ -362,7 +376,7 @@ const About = () => {
           {timelineEvents.length > initialDisplay && (
             <motion.button 
               className="view-more-btn"
-              onClick={() => setShowMore(!showMore)}
+              onClick={handleViewToggle}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0 }}
