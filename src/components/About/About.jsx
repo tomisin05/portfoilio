@@ -199,7 +199,7 @@ const About = () => {
         },
         {
           type: "Hackathon",
-          title: "Participated in Hopkins Hacks",
+          title: "Participated in HopHacks",
           organization: "Johns Hopkins University",
           date: "Fall 2024",
           description: "Built a GDP prediction model through lstm machine learning process and implemented an ai chat bot that describes the data to you."
