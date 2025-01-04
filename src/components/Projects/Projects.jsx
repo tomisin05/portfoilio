@@ -44,8 +44,8 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
       <div className="project-info">
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
+        <h3 className="project-title">{project.title}</h3>
+        <p className="project-description">{project.description}</p>
         <div className="project-actions">
           <a 
             href={project.siteUrl} 

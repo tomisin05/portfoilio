@@ -65,16 +65,15 @@
   box-shadow: 0 4px 15px var(--shadow-color);
   display: flex;
   flex-direction: column;
-  height: 100%; 
-  max-height: 600px; 
+  height: 600px; 
 }
 
 .project-image {
   position: relative;
   width: 100%;
   padding-top: 56.25%; 
-  min-height: 200px; 
-  max-height: 250px; 
+  height: 200px; 
+  /* max-height: 250px;  */
   overflow: hidden;
 }
 
@@ -132,8 +131,8 @@
   flex-direction: column;
   gap: 1rem;
   flex: 1;
-  max-height: 550px;
-  overflow-y: auto;
+  /* max-height: 550px;
+  overflow-y: auto; */
 }
 
 .project-info h3 {
@@ -152,7 +151,7 @@
 }
 
 .project-tech {
-  margin-top: auto; 
+  margin-top: 1rem; 
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -162,8 +161,9 @@
   padding: 0.3rem 0.8rem;
   background: rgba(0, 123, 255, 0.1);
   color: var(--primary-color);
-  border-radius: 15px;
+  border-radius: 20px;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .dark .tech-tag {
@@ -220,4 +220,8 @@
   .project-image {
     padding-top: 66.67%; 
   }
+  .project-card {
+      height: auto;
+      min-height: 480px;
+    }
 }
