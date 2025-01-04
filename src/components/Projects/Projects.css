@@ -536,6 +536,7 @@
     height: auto; /* Allow card to adjust to content */
     min-height: 450px; /* Set minimum height */
     max-height: none; /* Remove max height constraint */
+    width: 500px;
     margin: 0 1rem; /* Add some margin on the sides */
   }
 
@@ -584,6 +585,7 @@
   .project-card {
     margin: 0 0.5rem;
     min-height: 400px;
+    width: 300px;
   }
 
   .project-image {
