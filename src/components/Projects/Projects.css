@@ -493,10 +493,109 @@
   justify-content: center;
 } */ 
 .project-links a svg {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .projects-section {
+    padding: 3rem 0; /* Reduced padding for mobile */
   }
+
+  .section-title {
+    font-size: 2rem; /* Smaller font size for mobile */
+    margin-bottom: 2rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0 1rem;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .project-card {
+    height: auto; /* Allow card to adjust to content */
+    min-height: 450px; /* Set minimum height */
+    max-height: none; /* Remove max height constraint */
+    margin: 0 1rem; /* Add some margin on the sides */
+  }
+
+  .project-image {
+    height: 200px; /* Fixed height for images on mobile */
+  }
+
+  .project-info {
+    padding: 1rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    max-height: 100px; /* Limit description height */
+  }
+
+  .project-tech {
+    gap: 0.4rem;
+  }
+
+  .tech-tag {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .project-links a {
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+
+  .visit-site-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens */
+@media screen and (max-width: 350px) {
+  .project-card {
+    margin: 0 0.5rem;
+    min-height: 400px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .project-info {
+    padding: 0.8rem;
+  }
+
+  .tech-tag {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
