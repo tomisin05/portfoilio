@@ -104,6 +104,16 @@ const Projects = () => {
       category: 'ai'
     },
     {
+        title: 'AI Image Generator',
+        description: 'An AI-powered image generation tool using deep learning models.',
+        image: '/projects/ai-image.png',
+        github: 'https://github.com/username/ai-image',
+        demo: 'https://ai-image-gen.com',
+        siteUrl: 'https://ai-image-gen.com',
+        technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
+        category: 'ai'
+      },
+    {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates.',
       image: '/projects/task-app.png',
