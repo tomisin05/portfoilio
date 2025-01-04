@@ -59,13 +59,13 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'A full-stack e-commerce platform with real-time inventory management.',
-      image: 'public\projects\ecommerce.jpg',
-      github: 'https://github.com/username/ecommerce',
-      demo: 'https://demo-ecommerce.com',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-      category: 'web'
+      title: 'M.A.R.C.(LE) - AI Word Game',
+      description: 'A sophisticated Wordle-inspired game featuring information theory-based word guessing, real-time feedback, and multiple difficulty levels. Built with modern web technologies and advanced game mechanics.',
+      image: 'public/projects/marcle.jpg',
+      github: 'https://github.com/username/marcle',
+      demo: 'https://marcle-demo.com',
+      technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java'],
+      category: 'game'
     },
     {
       title: 'AI Image Generator',
@@ -125,6 +125,14 @@ const Projects = () => {
             whileTap={{ scale: 0.95 }}
           >
             AI Projects
+          </motion.button>
+          <motion.button
+            className={`filter-btn ${filter === 'game' ? 'active' : ''}`}
+            onClick={() => setFilter('game')}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Game Development
           </motion.button>
         </div>
 
