@@ -41,6 +41,18 @@ const ProjectCard = ({ project }) => {
       <div className="project-info">
         <h3>{project.title}</h3>
         <p>{project.description}</p>
+        <div className="project-actions">
+          <a 
+            href={project.siteUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="visit-site-btn"
+          >
+            Visit Site
+          </a>
+        </div>
+
+
         <div className="project-tech">
           {project.technologies.map((tech, index) => (
             <span key={index} className="tech-tag">{tech}</span>
@@ -72,6 +84,7 @@ const Projects = () => {
       image: '/projects/Marcle.png',
       github: 'https://github.com/tomisin05/MARCLE',
       demo: '/projects/demo.mp4', 
+      siteUrl: 'https://marcle-7vjaa2srz-oluwatomisin-badmus-projects.vercel.app/',
       technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java', 'Arduino'],
       category: 'game'
     },
@@ -81,6 +94,7 @@ const Projects = () => {
       image: '/projects/ai-image.png',
       github: 'https://github.com/username/ai-image',
       demo: 'https://ai-image-gen.com',
+      siteUrl: 'https://ai-image-gen.com',
       technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
       category: 'ai'
     },
@@ -90,6 +104,7 @@ const Projects = () => {
       image: '/projects/task-app.png',
       github: 'https://github.com/username/task-app',
       demo: 'https://task-app-demo.com',
+      siteUrl: 'https:/task-app.com',
       technologies: ['React', 'Firebase', 'Material-UI'],
       category: 'web'
     }

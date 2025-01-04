@@ -117,6 +117,9 @@
 
 .project-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .project-info h3 {
@@ -147,6 +150,38 @@
   background: rgba(0, 255, 157, 0.1);
   color: var(--secondary-color);
 }
+
+.project-actions {
+  margin: 1rem 0;
+}
+
+.visit-site-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.visit-site-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: var(--primary-color-dark);
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .visit-site-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 @media (max-width: 768px) {
   .filters {
