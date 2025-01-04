@@ -5,6 +5,11 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
 const ProjectCard = ({ project }) => {
+    const truncateDescription = (text, maxLength = 150) => {
+        if (text.length <= maxLength) return text;
+        return text.slice(0, maxLength) + '...';
+      };
+
   return (
     <motion.div
       className="project-card"
@@ -40,7 +45,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="project-info">
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
+        <p>{truncateDescription(project.description)}</p>
         <div className="project-actions">
           <a 
             href={project.siteUrl} 
