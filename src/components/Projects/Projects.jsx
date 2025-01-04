@@ -14,7 +14,15 @@ const ProjectCard = ({ project }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="project-image">
-        <img src={project.image} alt={project.title} />
+        <img 
+            src={project.image} 
+            alt={project.title} 
+            onError={(e) => {
+                e.target.onerror = null; 
+                e.target.src = '/path/to/fallback-image.jpg'; 
+              }}
+            
+            />
         <div className="project-overlay">
           <motion.div
             className="project-links"
