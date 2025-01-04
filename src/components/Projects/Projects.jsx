@@ -61,8 +61,8 @@ const Projects = () => {
     {
       title: 'M.A.R.C.(LE) - AI Word Game',
       description: 'A sophisticated Wordle-inspired game featuring information theory-based word guessing, real-time feedback, and multiple difficulty levels. Built with modern web technologies and advanced game mechanics.',
-      image: 'public/projects/marcle.jpg',
-      github: 'https://github.com/username/marcle',
+      image: 'public/projects/Marcle.png',
+      github: 'https://github.com/tomisin05/MARCLE',
       demo: 'https://marcle-demo.com',
       technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java'],
       category: 'game'
