@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
             <a href={project.github} target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+            <a href={project.siteUrl} target="_blank" rel="noopener noreferrer">
               <FaExternalLinkAlt />
             </a>
           </motion.div>
@@ -48,12 +48,12 @@ const ProjectCard = ({ project }) => {
         <p className="project-description">{project.description}</p>
         <div className="project-actions">
           <a 
-            href={project.siteUrl} 
+            href={project.demo} 
             target="_blank" 
             rel="noopener noreferrer"
             className="visit-site-btn"
           >
-            Visit Site
+            View Demo
           </a>
         </div>
 
