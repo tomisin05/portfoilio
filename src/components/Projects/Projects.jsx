@@ -64,7 +64,7 @@ const Projects = () => {
       image: '/projects/Marcle.png',
       github: 'https://github.com/tomisin05/MARCLE',
       demo: 'https://marcle-demo.com',
-      technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java'],
+      technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java', 'Arduino'],
       category: 'game'
     },
     {
