@@ -491,9 +491,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+} */ 
 .project-links a svg {
-    position: absolute;
+    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
