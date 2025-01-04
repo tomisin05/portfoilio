@@ -88,7 +88,7 @@ const Projects = () => {
       description: 'A sophisticated Wordle-inspired game featuring information theory-based word guessing, real-time feedback, and multiple difficulty levels. Built with modern web technologies and advanced game mechanics.',
       image: '/projects/Marcle.png',
       github: 'https://github.com/tomisin05/MARCLE',
-      demo: '/projects/demo1.mp4', 
+      demo: '/projects/demo.mp4', 
       siteUrl: 'https://marcle-7vjaa2srz-oluwatomisin-badmus-projects.vercel.app/',
       technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java', 'Arduino'],
       category: 'game'
