@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="project-image">
-        <img 
+        <img    
             src={project.image} 
             alt={project.title} 
             onError={(e) => {
