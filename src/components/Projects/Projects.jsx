@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
             alt={project.title} 
             onError={(e) => {
                 e.target.onerror = null; 
-                e.target.src = '/path/to/fallback-image.jpg'; 
+                e.target.src = '/projects/fallback.png'; 
               }}
             
             />
