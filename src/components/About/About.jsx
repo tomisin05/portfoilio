@@ -202,7 +202,7 @@ const About = () => {
           title: "Participated in HopHacks",
           organization: "Johns Hopkins University",
           date: "Fall 2024",
-          description: "Built a GDP prediction model through lstm machine learning process and implemented an ai chat bot that describes the data to you."
+          description: "Built a GDP prediction model through LSTM machine learning process and implemented an ai chat bot that describes the data to users."
         },
         {
           type: "Hackathon",
@@ -398,8 +398,9 @@ const About = () => {
           <h3>Fun Facts</h3>
           <ul>
             <li>🏆 Hackathon Champion: Won a hackathon on my birthday </li> 
-            <li>🎤 Debate Enthusiast: A proud member of the GMU Debate Team.</li> <li>🤖 AI Advocate: Passionate about making AI more accessible and cost-efficient for developing countries.</li> 
-            <li>🎓 Creative Educator: Engaged young minds through interactive math and debate bootcamps and outreach programs.</li> 
+            <li>🎤 Debate Enthusiast: A proud member of the GMU Debate Team.</li> 
+            <li>🤖 AI Advocate: Passionate about making AI more accessible and cost-efficient for developing countries.</li> 
+            <li>🎓 Creative Educator: Engaging young minds through interactive math and debate bootcamps and outreach programs.</li> 
             <li>🌍 Global Citizen: An international student from Nigeria, embracing new cultures while staying connected to my roots.</li>
           </ul>
         </motion.div>
