@@ -1,0 +1,36 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 9999;
+}
+
+.loading-logo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+}
+
+.loading-logo span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 500;
+}

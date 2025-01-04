@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+    /* Adjust font sizes for mobile */
+  h1 {
+    font-size: 2em; /* Smaller heading for mobile */
+  }
+  
+  /* Adjust the loading spinner size for mobile */
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* For even smaller screens */
+@media screen and (max-width: 480px) {
+  .app {
+    padding: 0 10px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading animation */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Stack elements vertically on mobile */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Instead of fixed pixel values, use relative units */
+.element {
+  padding: 1rem;
+  margin: 1em;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}

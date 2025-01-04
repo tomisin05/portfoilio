@@ -1,0 +1,153 @@
+.resume-section-container {
+  padding: 6rem 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.download-cv {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.download-icon {
+  font-size: 1.2rem;
+}
+
+.resume-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tab-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--card-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: white;
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.section-header h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.resume-item {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin-bottom: 1.5rem;
+}
+
+.resume-item h4 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+}
+
+.resume-item h5 {
+  margin: 0 0 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.resume-item .date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.dark .resume-item .date {
+  color: #aaa;
+}
+
+.resume-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-item ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-item ul li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .resume-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tab-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .resume-item {
+    padding: 1rem;
+  }
+}
