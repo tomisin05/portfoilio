@@ -50,8 +50,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  height: 100%;
   padding: 1rem;
+}
+
+
+.projects-grid > * {
+  height: 100%;
 }
 
 .project-card {
