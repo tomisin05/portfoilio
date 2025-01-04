@@ -84,7 +84,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'M.A.R.C.(LE) - AI Word Game',
+      title: 'M.A.R.C.(LE)',
       description: 'A sophisticated Wordle-inspired game featuring information theory-based word guessing, real-time feedback, and multiple difficulty levels. Built with modern web technologies and advanced game mechanics.',
       image: '/projects/Marcle.png',
       github: 'https://github.com/tomisin05/MARCLE',
