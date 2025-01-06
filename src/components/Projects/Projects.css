@@ -532,7 +532,7 @@
   height: 60px;
 }
 
-/* Mobile-specific styles */
+
 @media screen and (max-width: 768px) {
   .projects-section {
     padding: 3rem 0; 
