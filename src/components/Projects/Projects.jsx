@@ -70,17 +70,13 @@ const ProjectCard = ({ project }) => {
 
 const Projects = () => {
   const [filter, setFilter] = useState('all');
+  const [visibleProjects, setVisibleProjects] = useState(5);
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
     triggerOnce: true
   });
 
-  useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1, y: 0 });
-    }
-  }, [controls, inView]);
 
   const projects = [
     {
@@ -135,9 +131,29 @@ const Projects = () => {
     }
   ];
 
+
   const filteredProjects = filter === 'all'
-    ? projects
-    : projects.filter(project => project.category === filter);
+  ? projects
+  : projects.filter(project => project.category === filter);
+ 
+  const displayedProjects = filteredProjects.slice(0, visibleProjects)
+
+  const loadMore = () => {
+    setVisibleProjects(prev => prev + 5);
+  };
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
+  // Reset visible projects when filter changes
+  useEffect(() => {
+    setVisibleProjects(5);
+  }, [filter]);
+
+
 
   return (
     <section id="projects" className="projects-section">
@@ -192,11 +208,23 @@ const Projects = () => {
           </motion.button>
         </div>
 
-        <div className="projects-grid">
-          {filteredProjects.map((project, index) => (
+        <div className="projects-list">
+          {displayedProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
+
+        {filteredProjects.length > visibleProjects && (
+          <motion.button
+            className="view-more-btn"
+            onClick={loadMore}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            View More Projects
+          </motion.button>
+        )}
+
       </motion.div>
     </section>
   );
