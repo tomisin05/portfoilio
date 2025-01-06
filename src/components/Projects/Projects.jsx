@@ -144,7 +144,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start({ opacity: 1, y: 0 });
     }
   }, [controls, inView]);
 
