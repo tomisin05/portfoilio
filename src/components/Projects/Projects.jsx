@@ -172,6 +172,14 @@ const Projects = () => {
           >
             Game Development
           </motion.button>
+          <motion.button
+            className={`filter-btn ${filter === 'hackathon' ? 'active' : ''}`}
+            onClick={() => setFilter('hackathon')}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Hackathon
+          </motion.button>
         </div>
 
         <div className="projects-grid">
