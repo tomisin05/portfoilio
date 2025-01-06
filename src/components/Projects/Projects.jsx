@@ -138,7 +138,7 @@ const Projects = () => {
  
   const displayedProjects = filteredProjects.slice(0, visibleProjects)
 
-  const loadMore = () => {
+  const loadMore = () => { 
     setVisibleProjects(prev => prev + 5);
   };
 
