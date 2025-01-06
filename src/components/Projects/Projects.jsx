@@ -82,9 +82,9 @@ const Projects = () => {
     {
       title: 'M.A.R.C.(LE)',
       description: 'A sophisticated Wordle-inspired game featuring information theory-based word guessing, real-time feedback, and multiple difficulty levels. Built with modern web technologies and advanced game mechanics.',
-      image: '/projects/Marcle.png',
+      image: '/projects/marcle/Marcle.png',
       github: 'https://github.com/tomisin05/MARCLE',
-      demo: '/projects/demo.mp4', 
+      demo: '/projects/marcle/demo.mp4', 
       siteUrl: 'https://marcle-7vjaa2srz-oluwatomisin-badmus-projects.vercel.app/',
       technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java', 'Arduino'],
       category: 'game'
@@ -92,11 +92,11 @@ const Projects = () => {
     {
         "title": "Multipurpose Research Drone (MPRD)",
         "description": "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
-        "image": "/projects/MPRD.png",
+        "image": "/projects/PatiotHacks23/MPRD.jpg",
         "github": "https://github.com/Blender-guy/Multipurpose-Research-Drone-Hackathon",
         "demo": "/projects/mpdr-demo.mp4",
         "siteUrl": "https://devpost.com/software/multipurpose-research-drone",
-        "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "c", "KiCad"],
+        "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
         "category": "hackathon"
     },      
     {

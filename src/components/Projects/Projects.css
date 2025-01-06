@@ -291,7 +291,7 @@
 .project-card {
   background: var(--card-bg);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px var(--shadow-color);
@@ -682,10 +682,7 @@
     }
   }
   
-  /* Optional: Alternate project layout */
-  .project-card:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+
   
   @media screen and (max-width: 968px) {
     .project-card:nth-child(even) {
