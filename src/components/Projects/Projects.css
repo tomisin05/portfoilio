@@ -572,7 +572,7 @@
   }
 
   .project-image {
-    height: 200px; /* Fixed height for images on mobile */
+    height: 200px; 
   }
 
   .project-info {
