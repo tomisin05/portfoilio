@@ -93,7 +93,7 @@ const Projects = () => {
     {
         "title": "Multipurpose Research Drone (MPRD)",
         "description": "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
-        "image": "/projects/PatiotHacks23/MPRD.jpg",
+        "image": "/projects/PatriotHacks23/MPRD.jpg", 
         "github": "https://github.com/Blender-guy/Multipurpose-Research-Drone-Hackathon",
         "demo": "",
         "siteUrl": "https://devpost.com/software/multipurpose-research-drone",
