@@ -568,7 +568,7 @@
     min-height: 450px; /* Set minimum height */
     max-height: none; /* Remove max height constraint */
     width: 500px;
-    margin: 0 1rem; /* Add some margin on the sides */
+    margin: 0 1rem;
   }
 
   .project-image {
