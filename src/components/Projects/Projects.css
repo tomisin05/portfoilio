@@ -564,7 +564,7 @@
   }
 
   .project-card {
-    height: auto; /* Allow card to adjust to content */
+    height: auto; 
     min-height: 450px; 
     max-height: none; 
     width: 500px;
