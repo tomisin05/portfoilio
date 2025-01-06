@@ -94,6 +94,17 @@ const Projects = () => {
       category: 'game'
     },
     {
+        "title": "Multipurpose Research Drone (MPRD)",
+        "description": "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
+        "image": "/projects/MPRD.png",
+        "github": "https://github.com/Blender-guy/Multipurpose-Research-Drone-Hackathon",
+        "demo": "/projects/mpdr-demo.mp4",
+        "siteUrl": "https://devpost.com/software/multipurpose-research-drone",
+        "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "c", "KiCad"],
+        "category": "hackathon"
+      }
+      
+    {
       title: 'AI Image Generator',
       description: 'An AI-powered image generation tool using deep learning models.',
       image: '/projects/ai-image.png',
@@ -112,7 +123,7 @@ const Projects = () => {
         siteUrl: 'https://ai-image-gen.com',
         technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
         category: 'ai'
-      },
+    },
     {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates.',
