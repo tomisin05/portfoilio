@@ -100,22 +100,22 @@ const Projects = () => {
         "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
         "category": "hackathon"
     },      
-    {
-      title: 'AI Image Generator',
-      description: 'An AI-powered image generation tool using deep learning models.',
-      image: '/projects/ai-image.png',
-      github: 'https://github.com/username/ai-image',
-      demo: 'https://ai-image-gen.com',
-      siteUrl: 'https://ai-image-gen.com',
-      technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
-      category: 'ai'
-    },
+    // {
+    //   title: 'AI Image Generator',
+    //   description: 'An AI-powered image generation tool using deep learning models.',
+    //   image: '/projects/ai-image.png',
+    //   github: 'https://github.com/username/ai-image',
+    //   demo: 'https://ai-image-gen.com',
+    //   siteUrl: 'https://ai-image-gen.com',
+    //   technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
+    //   category: 'ai'
+    // },
     {
         title: 'AI Image Generator',
         description: 'An AI-powered image generation tool using deep learning models.',
         image: '/projects/ai-image.png',
         github: 'https://github.com/username/ai-image',
-        demo: 'https://ai-image-gen.com',
+        demo: '',
         siteUrl: 'https://ai-image-gen.com',
         technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
         category: 'ai'
@@ -125,7 +125,7 @@ const Projects = () => {
       description: 'A collaborative task management application with real-time updates.',
       image: '/projects/task-app.png',
       github: 'https://github.com/username/task-app',
-      demo: 'https://task-app-demo.com',
+      demo: '',
       siteUrl: 'https:/task-app.com',
       technologies: ['React', 'Firebase', 'Material-UI'],
       category: 'web'
