@@ -131,7 +131,7 @@ const Projects = () => {
       category: 'web'
     }
   ];
-
+ 
 
   const filteredProjects = filter === 'all'
   ? projects
