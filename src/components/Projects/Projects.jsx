@@ -46,6 +46,7 @@ const ProjectCard = ({ project }) => {
       <div className="project-info">
         <h3 className="project-title">{project.title}</h3>
         <p className="project-description">{project.description}</p>
+        {project.demo && project.demo.trim() !== '' && (
         <div className="project-actions">
           <a 
             href={project.demo} 
@@ -56,7 +57,7 @@ const ProjectCard = ({ project }) => {
             View Demo
           </a>
         </div>
-
+        )}
 
         <div className="project-tech">
           {project.technologies.map((tech, index) => (
@@ -94,7 +95,7 @@ const Projects = () => {
         "description": "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
         "image": "/projects/PatiotHacks23/MPRD.jpg",
         "github": "https://github.com/Blender-guy/Multipurpose-Research-Drone-Hackathon",
-        "demo": "/projects/mpdr-demo.mp4",
+        "demo": "",
         "siteUrl": "https://devpost.com/software/multipurpose-research-drone",
         "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
         "category": "hackathon"
