@@ -102,8 +102,7 @@ const Projects = () => {
         "siteUrl": "https://devpost.com/software/multipurpose-research-drone",
         "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "c", "KiCad"],
         "category": "hackathon"
-      }
-      
+    },      
     {
       title: 'AI Image Generator',
       description: 'An AI-powered image generation tool using deep learning models.',
