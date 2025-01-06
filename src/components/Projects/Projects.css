@@ -535,7 +535,7 @@
 /* Mobile-specific styles */
 @media screen and (max-width: 768px) {
   .projects-section {
-    padding: 3rem 0; /* Reduced padding for mobile */
+    padding: 3rem 0; 
   }
 
   .section-title {
