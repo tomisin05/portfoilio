@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import Typed from 'typed.js';
 import Particles from 'react-tsparticles';
@@ -6,15 +6,43 @@ import Particles from 'react-tsparticles';
 import { Link } from 'react-scroll';
 import { loadFull } from "tsparticles";
 import './Home.css';
-import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume.pdf'
+import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume_26.pdf'
 
 const Home = () => {
   const typedRef = useRef(null);
-  const particlesInit = async (engine) => {
+  const [isChanging, setIsChanging] = useState(false);
+  const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
+  }, []);
+
+  const avatarImages = [
+    '/Profile_Picture/Oluwatomisin_(6).png',
+    '/Profile_Picture/Oluwatomisin_(1).png',
+    '/Profile_Picture/Oluwatomisin_(2).png',
+    '/Profile_Picture/Oluwatomisin_(3).png',
+    '/Profile_Picture/Oluwatomisin_(4).png',
+    '/Profile_Picture/Oluwatomisin_(5).png',
+  ];
+
+  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+
+  // Click handler to cycle through photos
+  const handleAvatarClick = () => {
+    setIsChanging(true);
+    setTimeout(() => {
+      setCurrentPhotoIndex((prevIndex) => 
+        (prevIndex + 1) % avatarImages.length
+      );
+      setIsChanging(false);
+    }, 150);
   };
 
   useEffect(() => {
+    // avatarImages.forEach((imagePath) => {
+    //     const img = new Image();
+    //     img.src = imagePath;
+    //   });
+    
     const typed = new Typed(typedRef.current, {
       strings: [
         "Hi, I'm Oluwatomisin Badmus",
@@ -24,7 +52,11 @@ const Home = () => {
       typeSpeed: 50,
       backSpeed: 30,
       loop: true
+
+      
     });
+
+    
 
     return () => {
       typed.destroy();
@@ -47,10 +79,10 @@ const Home = () => {
             move: { enable: true, speed: 2, direction: "none", random: false, straight: false }
           },
           interactivity: {
-            detect_on: "canvas",
+            detectsOn: "window",
             events: {
-              onhover: { enable: true, mode: "grab" },
-              onclick: { enable: true, mode: "push" },
+              onHover: { enable: true, mode: "grab" },
+              onClick: { enable: true, mode: "push" },
               resize: true
             }
           }
@@ -69,7 +101,13 @@ const Home = () => {
             ease: "easeInOut"
           }}
         >
-          <img src="\Profile_Picture\IMG_5994~3_Original.jpeg" alt="Profile" className="avatar" />
+          <img 
+        src={avatarImages[currentPhotoIndex]}
+        alt="Profile Photo"
+        className="avatar"
+        onClick={handleAvatarClick}
+        style={{ cursor: 'pointer' }} // Makes it clear the image is clickable
+      />
         </motion.div>
 
         <div className="text-content">

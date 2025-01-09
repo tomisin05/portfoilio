@@ -113,7 +113,7 @@ const Projects = () => {
     {
         title: 'AI Image Generator',
         description: 'An AI-powered image generation tool using deep learning models.',
-        image: '/projects/ai-image.png',
+        image: '/projects/fallback.png',
         github: 'https://github.com/username/ai-image',
         demo: '',
         siteUrl: 'https://ai-image-gen.com',
@@ -123,7 +123,7 @@ const Projects = () => {
     {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates.',
-      image: '/projects/task-app.png',
+      image: '/projects/fallback.png',
       github: 'https://github.com/username/task-app',
       demo: '',
       siteUrl: 'https:/task-app.com',

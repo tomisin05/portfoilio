@@ -217,7 +217,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume.pdf'
+import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume_26.pdf'
 import { FaDownload, FaBriefcase, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 import './Resume.css';
 
@@ -315,7 +315,7 @@ const Resume = () => {
     {
       title: 'Bachelor of Science in Computer Science',
       organization: 'George Mason University',
-      date: 'Expected Graduation: May 2027',
+      date: 'Expected Graduation: Dec 2026',
       description: [
         'GPA: 3.94/4.0',
         'Relevant Coursework: Data Structures and Algorithms, Object Oriented Programming, Deep Learning, Artificial Intelligence, Linear Algebra, Discrete Mathematics, Calculus I, II, III.'
