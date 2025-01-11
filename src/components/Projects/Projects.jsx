@@ -91,25 +91,25 @@ const Projects = () => {
       category: 'game'
     },
     {
-        "title": "Multipurpose Research Drone (MPRD)",
-        "description": "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
-        "image": "/projects/PatriotHacks23/MPRD.jpg", 
-        "github": "https://github.com/Blender-guy/Multipurpose-Research-Drone-Hackathon",
-        "demo": "",
-        "siteUrl": "https://devpost.com/software/multipurpose-research-drone",
-        "technologies": ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
-        "category": "hackathon"
+        title: 'EcoFlow',  
+        description: 'A sustainable digital solution that transforms paper-based workflows into eco-friendly digital formats. Features real-time environmental impact tracking, showing CO2 emissions saved, trees preserved, and water conservation metrics. Built with cloud infrastructure and modern web technologies.',
+        image: '',
+        github: 'https://github.com/tomisin05/flow-scanner',
+        demo:'', //'/projects/ecoflow/demo.mp4',
+        siteUrl: 'https://flow-scanner.vercel.app/',
+        technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel'],
+        category: 'web'
+    },    
+    {
+        title: "Multipurpose Research Drone (MPRD)",
+        description: "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
+        image: "/projects/PatriotHacks23/MPRD.jpg", 
+        github: "https://github.com/Blender-guy/Multipurpose-Research-Drone-Hackathon",
+        demo: "",
+        siteUrl: "https://devpost.com/software/multipurpose-research-drone",
+        technologies: ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
+        category: "hackathon"
     },      
-    // {
-    //   title: 'AI Image Generator',
-    //   description: 'An AI-powered image generation tool using deep learning models.',
-    //   image: '/projects/ai-image.png',
-    //   github: 'https://github.com/username/ai-image',
-    //   demo: 'https://ai-image-gen.com',
-    //   siteUrl: 'https://ai-image-gen.com',
-    //   technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
-    //   category: 'ai'
-    // },
     {
         title: 'AI Image Generator',
         description: 'An AI-powered image generation tool using deep learning models.',

@@ -16,12 +16,12 @@ const Home = () => {
   }, []);
 
   const avatarImages = [
-    '/Profile_Picture/Oluwatomisin_(6).png',
     '/Profile_Picture/Oluwatomisin_(1).png',
     '/Profile_Picture/Oluwatomisin_(2).png',
     '/Profile_Picture/Oluwatomisin_(3).png',
     '/Profile_Picture/Oluwatomisin_(4).png',
     '/Profile_Picture/Oluwatomisin_(5).png',
+    '/Profile_Picture/Oluwatomisin_(6).png',
   ];
 
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
