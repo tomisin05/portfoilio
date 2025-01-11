@@ -92,8 +92,8 @@ const Projects = () => {
     },
     {
         title: 'EcoFlow',  
-        description: 'A sustainable digital solution that transforms paper-based workflows into eco-friendly digital formats. Features real-time environmental impact tracking, showing CO2 emissions saved, trees preserved, and water conservation metrics. Built with cloud infrastructure and modern web technologies.',
-        image: '',
+        description: 'A sustainable digital solution that transforms paper-based workflows into eco-friendly digital formats. Features real-time environmental impact tracking, showing CO2 emissions saved and number of trees preserved and sheets of paper recycled. Built with cloud infrastructure and modern web technologies.',
+        image: '/projects/EcoFlow/EcoFlow.png',
         github: 'https://github.com/tomisin05/flow-scanner',
         demo:'', //'/projects/ecoflow/demo.mp4',
         siteUrl: 'https://flow-scanner.vercel.app/',
