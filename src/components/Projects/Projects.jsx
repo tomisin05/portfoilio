@@ -216,7 +216,7 @@ const Projects = () => {
 
         {filteredProjects.length > visibleProjects && (
           <motion.button
-            className="view-more-btn"
+            className="view-more-btn" 
             onClick={loadMore}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
