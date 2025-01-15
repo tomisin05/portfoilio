@@ -88,7 +88,7 @@ const Projects = () => {
       demo: '/projects/marcle/demo.mp4', 
       siteUrl: 'https://marcle-7vjaa2srz-oluwatomisin-badmus-projects.vercel.app/',
       technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java', 'Arduino'],
-      category: 'game'
+      categories: ['game']
     },
     {
         title: 'EcoFlow',  
@@ -98,7 +98,7 @@ const Projects = () => {
         demo:'', //'/projects/ecoflow/demo.mp4',
         siteUrl: 'https://flow-scanner.vercel.app/',
         technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel'],
-        category: 'web'
+        categories: ['web']
     },    
     {
         title: "Multipurpose Research Drone (MPRD)",
@@ -108,7 +108,7 @@ const Projects = () => {
         demo: "",
         siteUrl: "https://devpost.com/software/multipurpose-research-drone",
         technologies: ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
-        category: "hackathon"
+        categories: "hackathon"
     },      
     {
         title: 'AI Image Generator',
@@ -118,7 +118,7 @@ const Projects = () => {
         demo: '',
         siteUrl: 'https://ai-image-gen.com',
         technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
-        category: 'ai'
+        categories: ['ai']
     },
     {
       title: 'Task Management App',
@@ -128,13 +128,13 @@ const Projects = () => {
       demo: '',
       siteUrl: 'https:/task-app.com',
       technologies: ['React', 'Firebase', 'Material-UI'],
-      category: 'web'
+      categories: ['web', 'ai']
     }
   ];
 
   const filteredProjects = filter === 'all'
   ? projects
-  : projects.filter(project => project.category === filter);
+  : projects.filter(project => project.categories.includes(filter));
  
   const displayedProjects = filteredProjects.slice(0, visibleProjects)
 
