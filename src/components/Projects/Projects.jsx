@@ -173,7 +173,7 @@ const Projects = () => {
             whileTap={{ scale: 0.95 }}
           >
             All
-          </motion.button>
+          </motion.button> 
           <motion.button
             className={`filter-btn ${filter === 'web' ? 'active' : ''}`}
             onClick={() => setFilter('web')}
