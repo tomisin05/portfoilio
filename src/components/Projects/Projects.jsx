@@ -92,14 +92,15 @@ const Projects = () => {
     },
     {
         title: 'EcoFlow',  
-        description: 'A sustainable digital solution that transforms paper-based workflows into eco-friendly digital formats. Features real-time environmental impact tracking, showing CO2 emissions saved and number of trees preserved and sheets of paper recycled. Built with cloud infrastructure and modern web technologies.',
+        description: 'A comprehensive debate flow management system that digitizes and organizes debate flows efficiently. Features include RFD (Reason for Decision) management with detailed feedback tracking, tournament organization, advanced filtering capabilities, and real-time updates. The platform enables users to upload, edit, and analyze debate performances while tracking environmental impact through paper savings leaderboard.',
         image: '/projects/EcoFlow/EcoFlow.png',
         github: 'https://github.com/tomisin05/flow-scanner',
         demo:'', //'/projects/ecoflow/demo.mp4',
         siteUrl: 'https://flow-scanner.vercel.app/',
-        technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel'],
+        technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel', 'Firebase Authentication', 'Cloud Firestore', 'React Router'],
         categories: ['web']
-    },    
+    },  
+    
     {
         title: "Multipurpose Research Drone (MPRD)",
         description: "A versatile drone built for collecting environmental data such as air quality, temperature, and humidity. It features replaceable nose sensors for various data collection types and is designed with 3D printed parts for durability and cost-effectiveness. The project was created during the GMU 36-hour hackathon, winning the Best Startup Track award at Patriot Hacks.",
@@ -108,28 +109,19 @@ const Projects = () => {
         demo: "",
         siteUrl: "https://devpost.com/software/multipurpose-research-drone",
         technologies: ["3D Printing", "Arduino", "NRF24L01", "FreeCAD", "C", "KiCad"],
-        categories: "hackathon"
+        categories: ["hackathon"]
     },      
     {
-        title: 'AI Image Generator',
-        description: 'An AI-powered image generation tool using deep learning models.',
-        image: '/projects/fallback.png',
-        github: 'https://github.com/username/ai-image',
-        demo: '',
-        siteUrl: 'https://ai-image-gen.com',
-        technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
-        categories: ['ai']
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates.',
-      image: '/projects/fallback.png',
-      github: 'https://github.com/username/task-app',
-      demo: '',
-      siteUrl: 'https:/task-app.com',
-      technologies: ['React', 'Firebase', 'Material-UI'],
-      categories: ['web', 'ai']
+        title: 'StockSmartAI',
+        description: 'An intelligent kitchen management system that combines inventory tracking with AI-powered recipe generation. Features smart recipe suggestions based on available ingredients, automated shopping list generation, and real-time inventory management. The application helps reduce food waste, optimize meal planning, and simplify the cooking process through intelligent automation and user-friendly interfaces.',
+        image: '/projects/StockSmart_AI/StockSmart_AI.png',
+        github: 'https://github.com/tomisin05/inventory-management',
+        demo: '', // '/projects/pantryai/demo.mp4',
+        siteUrl: 'https://inventory-management-k49z.vercel.app/',
+        technologies: ['React', 'Firebase', 'Google Gemini AI', 'Tailwind CSS', 'Node.js', 'Firebase Authentication', 'Cloud Firestore' ],
+        categories: ['web', 'ai']
     }
+    
   ];
 
   const filteredProjects = filter === 'all'
@@ -153,6 +145,7 @@ const Projects = () => {
     setVisibleProjects(5);
   }, [filter]);
 
+  
 
 
   return (
@@ -227,7 +220,7 @@ const Projects = () => {
 
       </motion.div>
     </section>
-  );
+  ); 
 };
 
 export default Projects;
