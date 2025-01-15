@@ -206,7 +206,7 @@ const Projects = () => {
           >
             Hackathon
           </motion.button>
-        </div>
+        </div> 
 
         <div className="projects-list">
           {displayedProjects.map((project, index) => (
