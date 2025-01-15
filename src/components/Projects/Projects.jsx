@@ -195,7 +195,7 @@ const Projects = () => {
             onClick={() => setFilter('game')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >
+          > 
             Game Development
           </motion.button>
           <motion.button
