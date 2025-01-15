@@ -191,7 +191,7 @@ const Projects = () => {
             AI Projects 
           </motion.button>
           <motion.button
-            className={`filter-btn ${filter === 'game' ? 'active' : ''}`}
+            className={`filter-btn ${filter === 'game' ? 'active' : ''}`} 
             onClick={() => setFilter('game')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
