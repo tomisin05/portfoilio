@@ -197,7 +197,7 @@ const Projects = () => {
             whileTap={{ scale: 0.95 }}
           > 
             Game Development
-          </motion.button>
+          </motion.button> 
           <motion.button
             className={`filter-btn ${filter === 'hackathon' ? 'active' : ''}`}
             onClick={() => setFilter('hackathon')}
