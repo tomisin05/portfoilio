@@ -169,7 +169,7 @@ const Projects = () => {
           <motion.button
             className={`filter-btn ${filter === 'all' ? 'active' : ''}`}
             onClick={() => setFilter('all')}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05 }} 
             whileTap={{ scale: 0.95 }}
           >
             All
