@@ -181,7 +181,7 @@ const Projects = () => {
             whileTap={{ scale: 0.95 }}
           >
             Web Development
-          </motion.button>
+          </motion.button> 
           <motion.button
             className={`filter-btn ${filter === 'ai' ? 'active' : ''}`}
             onClick={() => setFilter('ai')}
