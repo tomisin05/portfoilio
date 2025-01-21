@@ -153,7 +153,7 @@ const Home = () => {
               Download Resume
             </motion.a>
             
-            <Link to="contact" spy={true} smooth={true} duration={500}>
+            {/* <Link to="contact" spy={true} smooth={true} duration={500}>
               <motion.button
                 className="cta-button tertiary"
                 whileHover={{ scale: 1.05 }}
@@ -161,22 +161,11 @@ const Home = () => {
               >
                 Contact Me
               </motion.button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
 
-      {/* <motion.div 
-        className="scroll-indicator"
-        animate={{
-            y: [0, 10, 0],
-        }}
-        transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            ease: "easeInOut"
-        }}
-        > */}
         <motion.div 
             className={`scroll-indicator ${hideScroll ? 'hidden' : ''}`}
             animate={{

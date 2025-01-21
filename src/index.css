@@ -108,3 +108,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.main-content {
+    padding-bottom: 70px; /* Adjust based on your banner height */
+  }
+  

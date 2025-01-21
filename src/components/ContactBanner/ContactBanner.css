@@ -1,0 +1,62 @@
+/* src/components/ContactBanner/ContactBanner.css */
+.contact-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.banner-link {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.banner-content {
+  background: rgba(0, 123, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-banner-text {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contact-banner-cta {
+  color: white;
+  padding: 8px 20px;
+  border: 2px solid white;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.banner-content:hover .contact-banner-cta {
+  background: white;
+  color: #007bff;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  .banner-content {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .contact-banner-text {
+    font-size: 0.9rem;
+  }
+  
+  .contact-banner-cta {
+    padding: 6px 16px;
+    font-size: 0.9rem;
+  }
+}

@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
 import Contact from './components/Contact/Contact';
+import ContactBanner from './components/ContactBanner/ContactBanner';
 import './App.css';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <Projects />
       <Resume />
       <Contact />
+      <ContactBanner/>
     </div>
   );
 }
