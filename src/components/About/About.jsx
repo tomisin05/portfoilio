@@ -250,7 +250,7 @@ const About = () => {
     { name: 'Java', level: 90 },
     { name: 'C', level: 60 },
     { name: 'SQL', level: 60 },
-    { name: 'D a t a b a s e Management', level: 75 }
+    { name: 'D a t a b a se Management', level: 75 }
   ];
 
 
