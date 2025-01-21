@@ -63,6 +63,24 @@ const Home = () => {
     };
   }, []);
 
+  const [hideScroll, setHideScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+        if (window.scrollY > 100) {
+        setHideScroll(true);
+        } else {
+        setHideScroll(false);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section id="home" className="home-section">
       <Particles
@@ -147,6 +165,45 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* <motion.div 
+        className="scroll-indicator"
+        animate={{
+            y: [0, 10, 0],
+        }}
+        transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+        }}
+        > */}
+        <motion.div 
+            className={`scroll-indicator ${hideScroll ? 'hidden' : ''}`}
+            animate={{
+                y: [0, 10, 0],
+            }}
+            transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut"
+            }}
+            onClick={() => {
+                window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+                });
+            }}
+        >
+        <div className="mouse">
+            <div className="wheel"></div>
+        </div>
+        <div className="arrow-container">
+            <span className="arrow"></span>
+            <span className="arrow"></span>
+            <span className="arrow"></span>
+        </div>
+        </motion.div>
+
     </section>
   );
 };
