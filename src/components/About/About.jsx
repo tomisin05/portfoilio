@@ -345,6 +345,24 @@ const About = () => {
           cutting-edge technologies.
         </p>
 
+        {/* Skills section */}
+        <div className='skills-section'>
+            <h3>Skills</h3>
+            <div className="skills-container">
+                {skills.map((skill, index) => (
+                    <div key={index} className="skill-item">
+                        <div className="skill-name">{skill.name}</div>
+                        <div className="skill-bar">
+                            <div className="skill-level" style={{ width: `${skill.level}%` }}>
+                                {/* <span className="skill-percentage">{skill.level}%</span> */}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+        
+
         <div className="timeline-section" ref={timelineSectionRef}>
           <h3>My Journey</h3>
           <motion.div 
