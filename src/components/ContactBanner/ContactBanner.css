@@ -14,33 +14,35 @@
 }
 
 .banner-content {
-  background: rgba(0, 123, 255, 0.9);
+  background: var(--card-bg);
   backdrop-filter: blur(5px);
   padding: 12px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 10px var(--shadow-color);
+  border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
 }
 
 .contact-banner-text {
-  color: white;
+  color: var(--text-color, #fff);
   margin: 0;
   font-size: 1rem;
 }
 
 .contact-banner-cta {
-  color: white;
+  color: var(--primary-color, #007bff);
   padding: 8px 20px;
-  border: 2px solid white;
+  border: 2px solid var(--primary-color, #007bff);
   border-radius: 25px;
   transition: all 0.3s ease;
+  background: transparent;
 }
 
 .banner-content:hover .contact-banner-cta {
-  background: white;
-  color: #007bff;
+  background: var(--primary-color, #007bff);
+  color: var(--card-bg);
 }
 
 /* Adjust for mobile screens */
