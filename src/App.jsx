@@ -38,9 +38,6 @@ function App() {
   }
 
   return (
-        // <div style={{ padding: '20px' }}>
-        // <h1>Hello World</h1>
-        // </div>
     <div className={`app ${isDarkMode ? 'dark' : ''}`}>
       <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Home />
