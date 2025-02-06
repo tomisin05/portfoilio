@@ -116,7 +116,7 @@ const Projects = () => {
         description: 'An intelligent kitchen management system that combines inventory tracking with AI-powered recipe generation. Features smart recipe suggestions based on available ingredients, automated shopping list generation, and real-time inventory management. The application helps reduce food waste, optimize meal planning, and simplify the cooking process through intelligent automation and user-friendly interfaces.',
         image: '/projects/StockSmart_AI/StockSmart_AI.png',
         github: 'https://github.com/tomisin05/inventory-management',
-        demo: '', // '/projects/pantryai/demo.mp4',
+        demo: '', // '/projects/StockSmart/demo.mp4',
         siteUrl: 'https://inventory-management-k49z.vercel.app/',
         technologies: ['React', 'Firebase', 'Google Gemini AI', 'Tailwind CSS', 'Node.js', 'Firebase Authentication', 'Cloud Firestore' ],
         categories: ['web', 'ai']
