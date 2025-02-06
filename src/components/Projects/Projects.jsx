@@ -90,16 +90,28 @@ const Projects = () => {
       technologies: [ 'Next.js', 'TypeScript', 'MobX', 'Tailwind CSS', 'Supabase', 'Java', 'Arduino'],
       categories: ['game']
     },
+    // {
+    //     title: 'EcoFlow',  
+    //     description: 'A comprehensive debate flow management system that digitizes and organizes debate flows efficiently. Features include RFD (Reason for Decision) management with detailed feedback tracking, tournament organization, advanced filtering capabilities, and real-time updates. The platform enables users to upload, edit, and analyze debate performances while tracking environmental impact through paper savings leaderboard.',
+    //     image: '/projects/EcoFlow/EcoFlow.png',
+    //     github: 'https://github.com/tomisin05/flow-scanner',
+    //     demo:'', //'/projects/ecoflow/demo.mp4',
+    //     siteUrl: 'https://flow-scanner.vercel.app/',
+    //     technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel', 'Firebase Authentication', 'Cloud Firestore', 'React Router'],
+    //     categories: ['web']
+    // },  
+
     {
-        title: 'EcoFlow',  
-        description: 'A comprehensive debate flow management system that digitizes and organizes debate flows efficiently. Features include RFD (Reason for Decision) management with detailed feedback tracking, tournament organization, advanced filtering capabilities, and real-time updates. The platform enables users to upload, edit, and analyze debate performances while tracking environmental impact through paper savings leaderboard.',
+        title: 'EcoFlow',
+        description: 'A comprehensive debate flow management system powered by AI that digitizes and organizes debate flows efficiently. Features include RFD (Reason for Decision) management with AI-powered analysis and structured feedback using Google Gemini, automated speech-to-text transcription, and tournament organization. The platform enables real-time collaboration, advanced filtering capabilities, and secure file management through Firebase. Users can upload, edit, and analyze debate performances while tracking environmental impact through an interactive paper savings leaderboard. Integration with Amazon Bedrock and Google Cloud services provides intelligent debate analysis and automated processing of speech and text content.',
         image: '/projects/EcoFlow/EcoFlow.png',
         github: 'https://github.com/tomisin05/flow-scanner',
-        demo:'', //'/projects/ecoflow/demo.mp4',
+        demo: '', //'/projects/ecoflow/demo.mp4',
         siteUrl: 'https://flow-scanner.vercel.app/',
-        technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel', 'Firebase Authentication', 'Cloud Firestore', 'React Router'],
-        categories: ['web']
-    },  
+        technologies: [ 'React', 'Firebase', 'Node.js', 'Tailwind CSS', 'Vercel', 'Firebase Authentication', 'Cloud Firestore', 'React Router', 'Google Cloud Text-to-Speech', 'Google Gemini AI', 'Git'],
+        categories: ['web', 'ai']
+    },
+    
     
     {
         title: "Multipurpose Research Drone (MPRD)",
@@ -127,7 +139,7 @@ const Projects = () => {
         "image": "/projects/Portraitify/Portraitify.png",
         "github": "https://github.com/tomisin05/portraitify",
         "demo": "", // "/projects/portraitify/demo.mp4",
-        "siteUrl": "https://portraitify.vercel.app/",
+        "siteUrl": "https://portraitify.vercel.app/", 
         "technologies": ["React", "Firebase", "Tailwind CSS", "Vite", "Stripe", "Flux AI", "JZIP"],
         "categories": ["web", "ai"]
     }
