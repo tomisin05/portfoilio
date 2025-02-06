@@ -137,7 +137,7 @@ const Projects = () => {
         "title": "Portraitify",
         "description": "Portraitify is an innovative web application that transforms everyday photos into stunning professional portraits using advanced AI technology. Users can upload their images, customize their look with various styles, settings, and lighting options, and generate high-quality portraits tailored to their preferences. The platform also features a gallery for users to view and download their generated portraits, making it perfect for enhancing professional profiles and personal branding.",
         "image": "/projects/Portraitify/Portraitify.png",
-        "github": "https://github.com/tomisin05/portraitify",
+        "github": "https://github.com/tomisin05/portraitify", 
         "demo": "", // "/projects/portraitify/demo.mp4",
         "siteUrl": "https://portraitify.vercel.app/", 
         "technologies": ["React", "Firebase", "Tailwind CSS", "Vite", "Stripe", "Flux AI", "JZIP"],
