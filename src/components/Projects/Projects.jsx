@@ -131,7 +131,7 @@ const Projects = () => {
         demo: '', // '/projects/StockSmart/demo.mp4',
         siteUrl: 'https://inventory-management-k49z.vercel.app/',
         technologies: ['React', 'Firebase', 'Google Gemini AI', 'Tailwind CSS', 'Node.js', 'Firebase Authentication', 'Cloud Firestore' ],
-        categories: ['web', 'ai']
+        categories: ['web', 'ai'] 
     },
     {
         "title": "Portraitify",
