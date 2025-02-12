@@ -280,71 +280,81 @@ const Resume = () => {
     }
   }, [controls, inView]);
 
-  const experience = [
+  // Update the experience array
+const experience = [
     {
-      title: 'Outreach Intern',
-      organization: 'Mason Experimental Geometry Lab (MEGL)',
+      title: 'Mason Experimental Geometry Lab (MEGL) Outreach Intern',
+      organization: 'Mathematics Department',
       date: 'January 2024 – Present',
       description: [
-        'Spearhead educational initiatives for 300+ K-8 students, developing 5 new STEM activities and refining 10 existing ones, resulting in a 25% increase in student engagement and comprehension of geometric concepts.',
-        'Developed and implemented “Bubbles” activity, effectively explaining complex volume and surface area concepts to 100+ students, resulting in a 30% increase in quiz scores and 90% positive feedback from participants.'
+        'Orchestrate educational initiatives for 700+ K-8 students, developing 5 new STEM activities and refining 10 existing ones, resulting in a 25% increase in student engagement and comprehension of geometric concepts',
+        'Developed and implemented "Bubbles" activity, effectively explaining complex volume and surface area concepts to 100+ students, resulting in a 30% increase in quiz scores and 90% positive feedback from participants'
       ]
     },
     {
       title: 'Software Engineering Fellow',
       organization: 'Headstarter',
-      date: 'July 2024 – August 2024',
+      date: 'July 2024 – Aug 2024',
       description: [
-        'Engineered 5 AI-powered applications and APIs using Next.js, React, OpenAI, Pinecone, and Stripe API, achieving 98% user satisfaction rate and 50+ active users within the first month of deployment.',
-        'Led a team of 3 engineering fellows in developing and deploying 5 projects using MVC design patterns, leading to a 30% reduction in development time and improved code maintainability.',
-        'Coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns.'
+        'Engineered 5 AI-powered applications and APIs using Nextjs, React, OpenAI, Pinecone, and Stripe API, achieving 98% user satisfaction rate and 50+ active users within the first month of deployment',
+        'Led a team of 3 engineering fellows in developing and deploying 5 projects using MVC design patterns, leading to a 30% reduction in development time and a 40% decrease in bug reports due to improved code maintainability'
       ]
     },
     {
       title: 'Undergraduate Teaching Assistant',
-      organization: 'Computer Science Department, George Mason University',
+      organization: 'Computer Science Department',
       date: 'January 2024 – Present',
       description: [
-        'Enhanced learning experience for 100+ students by developing supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance.',
-        'Resolved 50+ student queries weekly via Piazza and email with an average response time of 2 hours, maintaining a 95% satisfaction rate and contributing to a 20% reduction in office hour wait times.'
+        'Elevated learning experience for 100+ students by developing supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance',
+        'Resolve 50+ student queries weekly via Piazza and email with an average response time of 2 hours, maintaining a 95% satisfaction rate and contributing to a 20% reduction in office hour wait times'
       ]
     }
   ];
-
+  
+  // Update the education array
   const education = [
     {
       title: 'Bachelor of Science in Computer Science',
       organization: 'George Mason University',
-      date: 'Expected Graduation: Dec 2026',
+      date: 'Expected Graduation: December 2026',
       description: [
         'GPA: 3.94/4.0',
-        'Relevant Coursework: Data Structures and Algorithms, Object Oriented Programming, Deep Learning, Artificial Intelligence, Linear Algebra, Discrete Mathematics, Calculus I, II, III.'
+        'Relevant Coursework: Data Structures and Algorithms, Object Oriented Programming, Systems Programming,  Deep Learning, Artificial Intelligence, Linear Algebra, Discrete Mathematics, Calculus I, II, III',
       ]
     }
   ];
-
+  
+  // Update the projects array
   const projects = [
     {
-      title: 'AI Chatbot',
-      organization: 'Independent Project',
-      date: 'August 2024',
+      title: 'Portraitify',
+      organization: 'React, Firebase, Tailwind CSS, Vite, Stripe, Fal AI, JZIP',
+      date: 'Jan. 2025 – Feb. 2025',
       description: [
-        'Developed an AI-powered customer support chatbot using Next.js and the Anthropic Claude 3 Haiku API, implementing dynamic, intelligent responses with advanced Generative AI models.',
-        'Deployed the chatbot to AWS EC2 servers, ensuring scalability and reliability in a cloud environment.',
-        'Leveraged AWS Bedrock API for LLM responses, enhancing the chatbot’s ability to handle complex queries.'
+        'Architected and deployed a full-stack AI portrait generation platform using React, Firebase, and Stripe, implementing a credit-based system with real-time transaction processing and secure user authentication',
+        'Engineered a portrait generation pipeline with custom styling options, integrating AI APIs and cloud storage for seamless delivery of high-quality professional portraits while maintaining responsive performance across devices'
       ]
     },
     {
-      title: 'AI Flashcards',
-      organization: 'Independent Project',
-      date: 'August 2024',
+      title: 'EcoFlow',
+      organization: 'React, Firebase, Tailwind CSS, Google Text-to-Speech, Gemini AI, Git',
+      date: 'Jan. 2025 – Feb. 2025',
       description: [
-        'Developed a SaaS platform using Next.js and React that integrates with OpenAI to generate AI-powered flashcards, enhancing users’ study routines through dynamically created content.',
-        'Implemented secure user authentication and management with Clerk and leveraged Firebase Firestore for real-time data storage, ensuring seamless access to personalized flashcard collections.',
-        'Integrated Stripe for robust payment processing, enabling subscription management and monetization options.'
+        'Implemented a secure cloud infrastructure with Firebase Storage and Firestore for real-time data sync, featuring role-based access, automated speech-to-text, and efficient tournament flow management with instant updates',
+        'Engineered a debate management platform with flow collaboration, voice-based RFD processing, and AI-powered feedback via Gemini API, reducing tournament preparation time by 50% and increasing user engagement by 30%'
+      ]
+    },
+    {
+      title: 'StockSmart AI',
+      organization: 'React, Firebase, Google Gemini AI, Tailwind CSS',
+      date: 'Jan. 2025 – Jan. 2025',
+      description: [
+        'Developed an inventory and recipe management system using React and Firebase, with real-time stock monitoring and AI recipe recommendations, reducing food waste by 20% and increasing user recipe engagement by 60%',
+        'Built a scalable, secure, and user-friendly platform with advanced filtering, nutritional analysis, and seamless integration with smart kitchen appliances, ensuring optimized inventory control'
       ]
     }
   ];
+  
 
   return (
     <section id="resume" className="resume-section-container">
