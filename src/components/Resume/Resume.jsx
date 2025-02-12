@@ -302,7 +302,7 @@ const experience = [
     },
     {
       title: 'Undergraduate Teaching Assistant',
-      organization: 'Com puter Science Department',
+      organization: 'Com puter Scie nce Department',
       date: 'January 2024 – Present',
       description: [
         'Elevated learning experience for 100+ students by developing supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance',
