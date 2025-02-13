@@ -217,7 +217,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume_26.pdf'
+import resumePdf from '/public/Oluwatomisin_Badmus_Resume_26.pdf'
 import { FaDownload, FaBriefcase, FaGraduationCap, FaCertificate } from 'react-icons/fa';
 import './Resume.css';
 
@@ -305,7 +305,7 @@ const experience = [
       organization: 'Computer Science Department',
       date: 'January 2024 – Present',
       description: [
-        'Elevated learning experience for 100+ students by dev eloping supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance',
+        'Elevated learning experience for 100+ students by developing supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance',
         'Resolve 50+ student queries weekly via Piazza and email with an average response time of 2 hours, maintaining a 95% satisfaction rate and contributing to a 20% reduction in office hour wait times'
       ]
     }

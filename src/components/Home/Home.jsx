@@ -6,7 +6,7 @@ import Particles from 'react-tsparticles';
 import { Link } from 'react-scroll';
 import { loadFull } from "tsparticles";
 import './Home.css';
-import resumePdf from '/src/resume/Oluwatomisin_Badmus_Resume_26.pdf'
+import resumePdf from '/public/Oluwatomisin_Badmus_Resume_26.pdf'
 
 const Home = () => {
   const typedRef = useRef(null);
