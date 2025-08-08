@@ -213,13 +213,18 @@
 
 // export default Resume;
 
-import { useEffect } from 'react';
-import { useState } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import resumePdf from '/public/Oluwatomisin_Badmus_Resume_26.pdf'
-import { FaDownload, FaBriefcase, FaGraduationCap, FaCertificate } from 'react-icons/fa';
-import './Resume.css';
+import { useEffect } from "react";
+import { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import resumePdf from "/public/Oluwatomisin_Badmus_Resume_26.pdf";
+import {
+  FaDownload,
+  FaBriefcase,
+  FaGraduationCap,
+  FaCertificate,
+} from "react-icons/fa";
+import "./Resume.css";
 
 const ResumeSection = ({ title, items, icon }) => {
   const controls = useAnimation();
@@ -267,7 +272,7 @@ const ResumeSection = ({ title, items, icon }) => {
 };
 
 const Resume = () => {
-  const [activeTab, setActiveTab] = useState('experience');
+  const [activeTab, setActiveTab] = useState("experience");
   const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -281,80 +286,80 @@ const Resume = () => {
   }, [controls, inView]);
 
   // Update the experience array
-const experience = [
+  const experience = [
     {
-      title: 'Mason Experimental Geometry Lab (MEGL) Outreach Intern',
-      organization: 'Mathematics Department',
-      date: 'January 2024 – Present',
+      title: "Mason Experimental Geometry Lab (MEGL) Outreach Intern",
+      organization: "Mathematics Department",
+      date: "January 2024 – Present",
       description: [
-        'Orchestrate educational initiatives for 700+ K-8 students, developing 5 new STEM activities and refining 10 existing ones, resulting in a 25% increase in student engagement and comprehension of geometric concepts',
-        'Developed and implemented "Bubbles" activity, effectively explaining complex volume and surface area concepts to 100+ students, resulting in a 30% increase in quiz scores and 90% positive feedback from participants'
-      ]
+        "Orchestrate educational initiatives for 700+ K-8 students, developing 5 new STEM activities and refining 10 existing ones, resulting in a 25% increase in student engagement and comprehension of geometric concepts",
+        'Developed and implemented "Bubbles" activity, effectively explaining complex volume and surface area concepts to 100+ students, resulting in a 30% increase in quiz scores and 90% positive feedback from participants',
+      ],
     },
     {
-      title: 'Software Engineering Fellow',
-      organization: 'Headstarter',
-      date: 'July 2024 – Aug 2024',
+      title: "Software Engineering Fellow",
+      organization: "Headstarter",
+      date: "July 2024 – Aug 2024",
       description: [
-        'Engineered 5 AI-powered applications and APIs using Nextjs, React, OpenAI, Pinecone, and Stripe API, achieving 98% user satisfaction rate and 50+ active users within the first month of deployment',
-        'Led a team of 3 engineering fellows in developing and deploying 5 projects using MVC design patterns, leading to a 30% reduction in development time and a 40% decrease in bug reports due to improved code maintainability'
-      ]
+        "Engineered 5 AI-powered applications and APIs using Nextjs, React, OpenAI, Pinecone, and Stripe API, achieving 98% user satisfaction rate and 50+ active users within the first month of deployment",
+        "Led a team of 3 engineering fellows in developing and deploying 5 projects using MVC design patterns, leading to a 30% reduction in development time and a 40% decrease in bug reports due to improved code maintainability",
+      ],
     },
     {
-      title: 'Undergraduate Teaching Assistant',
-      organization: 'Computer Science Department',
-      date: 'January 2024 – Present',
+      title: "Undergraduate Teaching Assistant",
+      organization: "Computer Science Department",
+      date: "January 2024 – Present",
       description: [
-        'Elevated learning experience for 100+ students by developing supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance',
-        'Resolve 50+ student queries weekly via Piazza and email with an average response time of 2 hours, maintaining a 95% satisfaction rate and contributing to a 20% reduction in office hour wait times'
-      ]
-    }
+        "Elevated learning experience for 100+ students by developing supplementary materials, leading review sessions, and offering personalized support, resulting in a 15% improvement in average class performance",
+        "Resolve 50+ student queries weekly via Piazza and email with an average response time of 2 hours, maintaining a 95% satisfaction rate and contributing to a 20% reduction in office hour wait times",
+      ],
+    },
   ];
-  
+
   // Update the education array
   const education = [
     {
-      title: 'Bachelor of Science in Computer Science',
-      organization: 'George Mason University',
-      date: 'Expected Graduation: December 2026',
+      title: "Bachelor of Science in Computer Science",
+      organization: "George Mason University",
+      date: "Expected Graduation: December 2026",
       description: [
-        'GPA: 3.94/4.0',
-        'Relevant Coursework: Data Structures and Algorithms, Object Oriented Programming, Systems Programming,  Deep Learning, Artificial Intelligence, Linear Algebra, Discrete Mathematics, Calculus I, II, III',
-      ]
-    }
+        "GPA: 3.94/4.0",
+        "Relevant Coursework: Data Structures and Algorithms, Object Oriented Programming, Systems Programming,  Deep Learning, Artificial Intelligence, Linear Algebra, Discrete Mathematics, Calculus I, II, III",
+      ],
+    },
   ];
-  
+
   // Update the projects array
   const projects = [
     {
-      title: 'Portraitify',
-      organization: 'React, Firebase, Tailwind CSS, Vite, Stripe, Fal AI, JZIP',
-      date: 'Jan. 2025 – Feb. 2025',
+      title: "Portraitify",
+      organization: "React, Firebase, Tailwind CSS, Vite, Stripe, Fal AI, JZIP",
+      date: "Jan. 2025 – Feb. 2025",
       description: [
-        'Architected and deployed a full-stack AI portrait generation platform using React, Firebase, and Stripe, implementing a credit-based system with real-time transaction processing and secure user authentication',
-        'Engineered a portrait generation pipeline with custom styling options, integrating AI APIs and cloud storage for seamless delivery of high-quality professional portraits while maintaining responsive performance across devices'
-      ]
+        "Architected and deployed a full-stack AI portrait generation platform using React, Firebase, and Stripe, implementing a credit-based system with real-time transaction processing and secure user authentication",
+        "Engineered a portrait generation pipeline with custom styling options, integrating AI APIs and cloud storage for seamless delivery of high-quality professional portraits while maintaining responsive performance across devices",
+      ],
     },
     {
-      title: 'EcoFlow',
-      organization: 'React, Firebase, Tailwind CSS, Google Text-to-Speech, Gemini AI, Git',
-      date: 'Jan. 2025 – Feb. 2025',
+      title: "EcoFlow",
+      organization:
+        "React, Firebase, Tailwind CSS, Google Text-to-Speech, Gemini AI, Git",
+      date: "Jan. 2025 – Feb. 2025",
       description: [
-        'Implemented a secure cloud infrastructure with Firebase Storage and Firestore for real-time data sync, featuring role-based access, automated speech-to-text, and efficient tournament flow management with instant updates',
-        'Engineered a debate management platform with flow collaboration, voice-based RFD processing, and AI-powered feedback via Gemini API, reducing tournament preparation time by 50% and increasing user engagement by 30%'
-      ]
+        "Implemented a secure cloud infrastructure with Firebase Storage and Firestore for real-time data sync, featuring role-based access, automated speech-to-text, and efficient tournament flow management with instant updates",
+        "Engineered a debate management platform with flow collaboration, voice-based RFD processing, and AI-powered feedback via Gemini API, reducing tournament preparation time by 50% and increasing user engagement by 30%",
+      ],
     },
     {
-      title: 'StockSmart AI',
-      organization: 'React, Firebase, Google Gemini AI, Tailwind CSS',
-      date: 'Jan. 2025 – Jan. 2025',
+      title: "StockSmart AI",
+      organization: "React, Firebase, Google Gemini AI, Tailwind CSS",
+      date: "Jan. 2025 – Jan. 2025",
       description: [
-        'Developed an inventory and recipe management system using React and Firebase, with real-time stock monitoring and AI recipe recommendations, reducing food waste by 20% and increasing user recipe engagement by 60%',
-        'Built a scalable, secure, and user-friendly platform with advanced filtering, nutritional analysis, and seamless integration with smart kitchen appliances, ensuring optimized inventory control'
-      ]
-    }
+        "Developed an inventory and recipe management system using React and Firebase, with real-time stock monitoring and AI recipe recommendations, reducing food waste by 20% and increasing user recipe engagement by 60%",
+        "Built a scalable, secure, and user-friendly platform with advanced filtering, nutritional analysis, and seamless integration with smart kitchen appliances, ensuring optimized inventory control",
+      ],
+    },
   ];
-  
 
   return (
     <section id="resume" className="resume-section-container">
@@ -372,7 +377,7 @@ const experience = [
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a href= {resumePdf} download className="download-button">
+          <a href={resumePdf} download className="download-button">
             <FaDownload className="download-icon" />
             Download Resume
           </a>
@@ -380,24 +385,28 @@ const experience = [
 
         <div className="resume-tabs">
           <motion.button
-            className={`tab-button ${activeTab === 'experience' ? 'active' : ''}`}
-            onClick={() => setActiveTab('experience')}
+            className={`tab-button ${
+              activeTab === "experience" ? "active" : ""
+            }`}
+            onClick={() => setActiveTab("experience")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Experience
           </motion.button>
           <motion.button
-            className={`tab-button ${activeTab === 'education' ? 'active' : ''}`}
-            onClick={() => setActiveTab('education')}
+            className={`tab-button ${
+              activeTab === "education" ? "active" : ""
+            }`}
+            onClick={() => setActiveTab("education")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Education
           </motion.button>
           <motion.button
-            className={`tab-button ${activeTab === 'projects' ? 'active' : ''}`}
-            onClick={() => setActiveTab('projects')}
+            className={`tab-button ${activeTab === "projects" ? "active" : ""}`}
+            onClick={() => setActiveTab("projects")}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -406,21 +415,21 @@ const experience = [
         </div>
 
         <div className="resume-content">
-          {activeTab === 'experience' && (
+          {activeTab === "experience" && (
             <ResumeSection
               title="Professional Experience"
               items={experience}
               icon={FaBriefcase}
             />
           )}
-          {activeTab === 'education' && (
+          {activeTab === "education" && (
             <ResumeSection
               title="Education"
               items={education}
               icon={FaGraduationCap}
             />
           )}
-          {activeTab === 'projects' && (
+          {activeTab === "projects" && (
             <ResumeSection
               title="Projects"
               items={projects}
